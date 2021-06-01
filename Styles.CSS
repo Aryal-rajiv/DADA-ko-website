@@ -8,21 +8,21 @@
     background: #131313;
     height: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     position: sticky;
     top: 0;
     z-index: 999;
+    justify-content: center;
 }
+ 
 .navbar__container{
   display: flex;
   justify-content: space-between;
   height: 100px;
   width: 120px;
   max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 50px;
+  margin-right: 35em;
 }
 #navbar__logo{
     background-color: #ff7;
@@ -42,12 +42,17 @@
     margin-right: 0.5rem;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 .navbar__menu{
     display: flex;
     align-items: center;
     list-style: none;
     text-align: center;
-
+    display: flex; 
+    justify-content: center;
+    
 }
 .navbar__item{
     height: 80px;
@@ -58,31 +63,25 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 1em 0 1em;
 
 }
-.navbar__btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-}
+
 .button{
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 10px 20px;
-  height: 100%;
-  width: 100%;
+  padding: 0em;
+  height: 3em;
+  width: 5em;
   border: none;
   outline: none;
-  border-radius: #f77062;
-  color: #fff;
+  border-radius: 1.3em;
+  color: black;
 }
 .button:hover {
-  background: #4837ff;
+  background: red;
   transition: all 0.3s ease;
 }
 .navbar__links:hover {
@@ -102,7 +101,7 @@
  .navbar__menu{
    display: grid;
    grid-template-columns: auto;
-   margin: 0;
+   margin: 1 em;
    width: 100%;
    position: absolute;
    top: -1000px;
@@ -119,7 +118,7 @@
    transition: all 0.5s ease;
    z-index: 99;
    height: 50vh;
-   font-size: 1.6 rem;
+   font-size: 1 em;
  }
  #navbar__logo{
    padding-left: 25px;
@@ -173,12 +172,11 @@
 /*Hero section*/
 .main__container{
   display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
   height: 90vh;
-  background-color: #141414;
+  background-color: #d6faf4;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -202,6 +200,7 @@ background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color:transparent;
   }
   .main__content p{
     margin-top: 1rem;
@@ -209,7 +208,7 @@ background-size: 100%;
     font-weight: 700;
     color: #fff;
   }
-  .main__btn{
+.main__btn{
     font-size: 1rem;
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     padding: 14px 32px;
@@ -264,6 +263,105 @@ background-size: 100%;
       margin: 0 auto;
       height: 90vh;
      }
+     .main__content h1 {
+       font-size: 2.4rem;
+       margin-top: 2rem;
+     }
+     .main__content h5 {
+       font-size: 3rem;
+     }
+     .main__content p {
+       margin-top: 1rem;
+       font-size: 1.5rem;
+
+     }
+   
   }
+  @media screen and (max-width: 480px) {
+    .main__content h1 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+    .main__content h5 {
+      font-size: 2rem;
+    }
+    .main__content p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
     
+    .main__btn{
+      padding: 12px 35px;
+      margin: 2.5rem 0;
+      
+    }
   }
+    .Project{
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: #d6faf4;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+
+
+    } 
+    .Project h1
+    {
+      background-color:#ff8177;
+      background-image: linear-gradient(to right,#ff8177 0%,#ff867a 0%,#ff8c7f 21%,#f99185 52%,#cf556c 78%,
+      #b12a5b 100%);
+      background-size: 100%;
+      margin-bottom: 5rem;
+      font-size: 2.5rem; 
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color:transparent;
+
+    }
+    .projects_tiles{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 1em;
+      width: 1em;
+      border: none;
+      outline: none;
+      color: black;
+
+    }
+    .Research{
+      display: grid;
+      align-items: center;
+      justify-self: center;
+      margin: 0 auto;
+      height: 90vh;
+      background-color: #d6faf4;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0 50px;
+    
+        } 
+    
+        .Last-page{
+          display: grid;
+          align-items: center;
+          justify-self: center;
+          margin: 0 auto;
+          height: 90vh;
+          background-color: #d6faf4;
+          z-index: 1;
+          width: 100%;
+          max-width: 1300px;
+          padding: 0 50px;
+        
+            } 
+        
+      
