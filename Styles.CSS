@@ -178,7 +178,6 @@ html{
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding: 0 50px;
 
 }
 .main__container{
@@ -189,29 +188,20 @@ html{
 font-size: 10em;
 background-color: #ff0844;
 background-image: linear-gradient(to top, #ff084f 0%, #ffb199 100%);
-/*align-content: flex-end;*/
-text-align: right;
+float: right;
+width: 50%
 }
-.main__content h5 {
-  font-size: 4em;
-  background-color: #ff0844;
-  background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color:transparent;
-  text-align: right;
+.main__content h4 {
+  float: right;
+   width: 50%
   }
-  .main__content p{
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #fff;
-  }
+ 
+  
   .My_image {
-    float: right;
-    
+   float: left;
+   width: 50%
+   
+   
   }
 
   @media screen and (max-width: 768px){
