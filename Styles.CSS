@@ -4,6 +4,13 @@
   padding: 0;
   font-family: kumbh sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
+body{
+    background: #faf7f7;
+
+}
 .navbar{
     background: #131313;
     height: 100px;
@@ -14,6 +21,8 @@
     top: 0;
     z-index: 999;
     justify-content: center;
+    max-width: 95rem;
+    
 }
  
 .navbar__container{
@@ -21,7 +30,7 @@
   justify-content: space-between;
   height: 100px;
   width: 120px;
-  max-width: 1300px;
+  max-width: 85rem;
   margin-right: 35em;
 }
 #navbar__logo{
@@ -42,15 +51,11 @@
     margin-right: 0.5rem;
 
 }
-html{
-  scroll-behavior: smooth;
-}
 .navbar__menu{
     display: flex;
     align-items: center;
     list-style: none;
-    text-align: center;
-    display: flex; 
+    text-align: center; 
     justify-content: center;
     
 }
@@ -162,11 +167,12 @@ html{
 
 }
 
+
 /*1st page*/
-.main{
+#about_me{
   display:grid;
   margin: 0 auto;
-  height: 90vh;
+  height: 35rem;
   background-color:#D1DFEA;
   z-index: 1;
   width: 100%;
@@ -180,16 +186,16 @@ html{
 }
 .main__container h1{
 font-size: 5rem;
-background-color: #ff0040;
+text-transform: capitalize;
 position: relative;
 }
 .main__container h4{
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
   .details{
-    float:right;  
+    float: right;  
     padding-top: 2rem;
     padding-right: 4rem;
   }
@@ -199,8 +205,6 @@ position: relative;
    width: 40%;
    margin-right: 5rem;
    margin-left: 3rem;
-   margin-top: 4rem;
-  
   }
 
   @media screen and (max-width: 768px){
@@ -214,7 +218,7 @@ position: relative;
      }
      .main__content h1 {
        font-size: 2.4rem;
-       margin-top: 2rem;
+       margin-top: 1rem;
      }
      .main__content h5 {
        font-size: 3rem;
@@ -229,7 +233,7 @@ position: relative;
   @media screen and (max-width: 480px) {
     .main__content h1 {
       font-size: 2rem;
-      margin-top: 3rem;
+      margin-top: 1rem;
     }
     .main__content h5 {
       font-size: 2rem;
@@ -245,37 +249,55 @@ position: relative;
       
     }
   }
-    .Project{
-      display:grid;
-      margin: 0 auto;
-      height: 90vh;
+
+
+  /* Project-section*/
+
+
+    #my_Project{
+      padding: 3rem;
+      height: 60rem;
+      margin-left: 3rem;
       background-color:#D1DFEA;
-      z-index: 1;
-      width: 100%;
       max-width: 85rem;
     } 
-    .Projects_tiles{
-      display:flex
-  
-    }
-     h1
-    {
-      margin-top: 5rem;
+    #my_Project h1{
       background-color:#ff8177;
       background-image: linear-gradient(to right,#ff8177 0%,#ff867a 0%,#ff8c7f 21%,#f99185 52%,#cf556c 78%,
       #b12a5b 100%);
-      background-size: 100%;
-      margin-bottom: 5rem;
-      font-size: 2.5rem; 
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-text-fill-color:transparent;
-      justify-content: center;
-
+      text-align: center;
+      font-size: 4rem;
+      max-width: 35%;
+      margin-bottom: 1rem;
+        
     }
+    .Projects_tiles{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin:2em 9em;
+  
+    }
+    .projects_tiles .project{
+      margin-bottom:1em;
+      color:whitesmoke;
+      height:16em;
+      width:18em;
+      background-color: #112240;
+      transition: height 1s,width 2s;
+      }
+      
+   .project:hover{
+          height:18em;
+          width:19em;
+                 }
+  
+      
+    /* Research section*/
 
-    .Research{
+
+    #my_Research{
       display:grid;
       margin: 0 auto;
       height: 90vh;
@@ -283,11 +305,18 @@ position: relative;
       z-index: 1;
       width: 100%;
       max-width: 85rem;
-      margin-bottom: 2.5rem;
-        }   
+      margin-bottom: 3rem;
+        }  
+
         .Research h1{
+          margin-top: 1rem;
           margin-left: 3rem;
           font-size: 4rem;
+          background-color:#ff8177;
+          background-image: linear-gradient(to right,#ff8177 0%,#ff867a 0%,#ff8c7f 21%,#f99185 52%,#cf556c 78%,
+          #b12a5b 100%);
+          text-align: center;
+          max-width: 35%;
         }
         .main__img--container {
           text-align: center;
@@ -296,8 +325,13 @@ position: relative;
         #main__img {
           height: 80%;
           width: 80%;
+        }
     
-      .Last-Page{
+
+        /* Last page */
+
+
+      #my_Last-Page{
       display:grid;
       margin: 0 auto;
       height: 90vh;
@@ -305,6 +339,16 @@ position: relative;
       z-index: 1;
       width: 100%;
       max-width: 85rem;   
+    }
+    .Last-Page h1{
+          margin-top: 2rem;
+          margin-left: 3rem;
+          font-size: 4rem;
+          background-color:#ff8177;
+          background-image: linear-gradient(to right,#ff8177 0%,#ff867a 0%,#ff8c7f 21%,#f99185 52%,#cf556c 78%,
+          #b12a5b 100%);
+          text-align: center;
+          max-width: 35%;
     }
     .main__btn{
       font-size: 1rem;
@@ -343,6 +387,24 @@ position: relative;
     }
     .last_button:hoverafter{
       width: 100;
+    }
+    
+    .footer{
+      background: #131313;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      font-size:1.5em;
+      position: sticky;
+    
+    }
+    .footer_text{
+       color: #fff;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       text-decoration: none;
+       font-size: 1rem;
     }
         
       
