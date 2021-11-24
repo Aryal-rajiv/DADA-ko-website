@@ -206,6 +206,9 @@ position: relative;
    margin-right: 5rem;
    margin-left: 3rem;
   }
+  .Social_links{
+    color: inherit;
+  }
 
   @media screen and (max-width: 768px){
     .main__container{
@@ -273,7 +276,7 @@ position: relative;
     }
     .Projects_tiles{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-between;
       margin:2em 9em;
@@ -318,13 +321,15 @@ position: relative;
           text-align: center;
           max-width: 35%;
         }
-        .main__img--container {
-          text-align: center;
-      
-        }
-        #main__img {
-          height: 80%;
-          width: 80%;
+
+        .Research__Card{
+          display: flex;
+          float: left;
+                }
+        .Research__Card p{
+          text-transform: capitalize;
+          font-size: 2rem;
+          background-color: lawngreen;
         }
     
 
@@ -335,7 +340,7 @@ position: relative;
       display:grid;
       margin: 0 auto;
       height: 90vh;
-      background-color:#D1DFEA;
+      background-color: #D1DFEA;
       z-index: 1;
       width: 100%;
       max-width: 85rem;   
@@ -389,13 +394,13 @@ position: relative;
       width: 100;
     }
     
-    .footer{
+    .Footer{
       background: #131313;
-      height: 100px;
+      height: 3rem;
       display: flex;
       align-items: center;
       font-size:1.5em;
-      position: sticky;
+      margin-top: 8rem;
     
     }
     .footer_text{
