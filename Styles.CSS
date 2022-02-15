@@ -259,7 +259,7 @@ position: relative;
 
     #my_Project{
       padding: 3rem;
-      height: 60rem;
+      height: 50rem;
       margin-left: 3rem;
       background-color:#D1DFEA;
       max-width: 85rem;
@@ -271,7 +271,7 @@ position: relative;
       text-align: center;
       font-size: 4rem;
       max-width: 35%;
-      margin-bottom: 8rem;
+      margin-bottom: 4rem;
         
     }
     .Projects_tiles{
@@ -478,11 +478,14 @@ position: relative;
     }
     .Social_Media{
       margin-bottom: 10rem;
-      margin-left: 70rem;
-
+      margin-left: 50rem;
+      color: whitesmoke;
     }
     .Social_Media i{
       margin: 0.4rem;
+      height: 3rem;
+      width: 3rem;
+      text-decoration-color: whitesmoke;
       
     }
     .Last-Page h2{
@@ -533,11 +536,10 @@ position: relative;
     }
     .Last-Page p{
       font-size: 2rem;
-      font-family: cursive;
       margin-left: 5rem;
     }
-    .Last-Page h4{
-      margin-left: 70rem;
+    .Last-Page button{
+      margin-left: 7rem;
     }
     
     footer{
@@ -554,6 +556,8 @@ position: relative;
        font-size: 1rem;
        margin-left: 30rem;
        align-items: center;
+       margin-bottom: 0;
+       
     }
         
       
